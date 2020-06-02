@@ -1,0 +1,31 @@
+{
+  "name": "react-github-pages",
+  "version": "0.0.1",
+  "description": "An action to deploy react application on github pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurleensethi/react-github-pages-action.git"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "react",
+    "javascript",
+    "js"
+  ],
+  "author": "Gurleen Sethi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gurleensethi/react-github-pages-action/issues"
+  },
+  "homepage": "https://github.com/gurleensethi/react-github-pages-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/exec": "^1.0.4",
+    "@actions/github": "^2.2.0"
+  }
+}

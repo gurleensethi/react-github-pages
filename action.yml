@@ -1,0 +1,19 @@
+name: "GitHub React Pages"
+description: "An action to deploy react application on github pages."
+inputs:
+  email:
+    description: "Email of the user"
+    required: false
+  name:
+    description: "Name of the user"
+    required: false
+  access_token:
+    description: "Personal action token from GitHub"
+    required: true
+  project_folder:
+    description: "Path to react application folder"
+    required: false
+    default: ""
+runs:
+  using: "node12"
+  main: "index.js"
