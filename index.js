@@ -22,8 +22,7 @@ const path = require("path");
 
     // 'cd' change directory was not working for some reason.
     const npmChangeDir = !!projectFolder ? `--prefix ${projectFolder}` : "";
-    let gitChangeDir = !!projectFolder ? `-C ${projectFolder}` : "";
-    gitChangeDir = path.join(projectFolder, "build");
+    const gitChangeDir = `-C ${path.join(projectFolder || "", "build")}`;
 
     await exec.exec(`npm install ${npmChangeDir}`);
     await exec.exec(`npm run build --production ${npmChangeDir}`);
